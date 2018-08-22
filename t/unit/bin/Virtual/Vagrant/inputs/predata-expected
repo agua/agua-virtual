@@ -1,0 +1,13 @@
+#### CREATE PRIVATE KEY BOTOFILE
+BOTOFILE=/root/.boto
+echo "Creating boto config file: $BOTOFILE"
+rm -fr $BOTOFILE
+cat <<EOT >> $BOTOFILE
+[Credentials]
+aws_access_key_id=*****MYACCESSKEYID*****
+aws_secret_access_key=*****MYAWSSECRETACCESSKEY*****
+[s3]
+calling_format=boto.s3.connection.OrdinaryCallingFormat
+
+EOT
+

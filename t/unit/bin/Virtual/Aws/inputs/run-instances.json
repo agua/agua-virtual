@@ -1,0 +1,88 @@
+{
+    "OwnerId": "408183384613",
+    "ReservationId": "r-a38b3371",
+    "Instances": [
+        {
+            "ClientToken": null,
+            "InstanceId": "i-f0bc0174",
+            "StateReason": {
+                "Message": "pending",
+                "Code": "pending"
+            },
+            "LaunchTime": "2016-03-04T02:24:08.000Z",
+            "ProductCodes": [],
+            "EbsOptimized": false,
+            "IamInstanceProfile": {
+                "Id": "AIPAJKEUZEBHQYL534IHC",
+                "Arn": "arn:aws:iam::408183384613:instance-profile/VPCLockDown"
+            },
+            "Architecture": "x86_64",
+            "Placement": {
+                "GroupName": null,
+                "AvailabilityZone": "us-east-1a",
+                "Tenancy": "default"
+            },
+            "VirtualizationType": "hvm",
+            "PrivateDnsName": "ip-10-50-1-131.ec2.internal",
+            "RootDeviceType": "ebs",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "AmiLaunchIndex": 0,
+            "StateTransitionReason": null,
+            "SourceDestCheck": true,
+            "BlockDeviceMappings": [],
+            "Hypervisor": "xen",
+            "State": {
+                "Name": "pending",
+                "Code": 0
+            },
+            "NetworkInterfaces": [
+                {
+                    "VpcId": "vpc-2a08164f",
+                    "PrivateIpAddress": "10.50.1.131",
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "Groups": [
+                        {
+                            "GroupName": "ITMI-CL-DEV Private group 10.50.0.0",
+                            "GroupId": "sg-6877790f"
+                        }
+                    ],
+                    "NetworkInterfaceId": "eni-1d576653",
+                    "Description": null,
+                    "PrivateIpAddresses": [
+                        {
+                            "PrivateIpAddress": "10.50.1.131",
+                            "Primary": true
+                        }
+                    ],
+                    "OwnerId": "408183384613",
+                    "Attachment": {
+                        "AttachmentId": "eni-attach-15dbccee",
+                        "DeviceIndex": 0,
+                        "Status": "attaching",
+                        "AttachTime": "2016-03-04T02:24:08.000Z",
+                        "DeleteOnTermination": true
+                    },
+                    "SubnetId": "subnet-4fb49838"
+                }
+            ],
+            "SubnetId": "subnet-4fb49838",
+            "VpcId": "vpc-2a08164f",
+            "PublicDnsName": null,
+            "ImageId": "ami-d05e75b8",
+            "RootDeviceName": "/dev/sda1",
+            "PrivateIpAddress": "10.50.1.131",
+            "KeyName": "cl-bioinfo",
+            "InstanceType": "m3.xlarge",
+            "SecurityGroups": [
+                {
+                    "GroupName": "ITMI-CL-DEV Private group 10.50.0.0",
+                    "GroupId": "sg-6877790f"
+                }
+            ]
+        }
+    ],
+    "Groups": []
+}
